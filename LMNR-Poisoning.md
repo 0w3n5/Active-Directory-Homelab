@@ -3,6 +3,7 @@
 ### 1. Set up responder
 **sudo responder -I eth0 -dwv**
 *we are now listening for traffic*
+
 ### 2. Go to one of the windows machines and point it at your attacker machine
 **effectively search for the attack machines ip to create a log entry**
 *this will not resolve but should let us pull down the hash*
