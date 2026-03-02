@@ -7,6 +7,7 @@
 ### 2. Go to one of the windows machines and point it at your attacker machine
 **effectively search for the attack machines ip to create a log entry**
 *this will not resolve but should let us pull down the hash*
+images/Hash from LMNR.png
 
 ### 3. Use hashcat on the hash
 	1. nano hash.txt 
